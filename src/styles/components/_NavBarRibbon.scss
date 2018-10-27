@@ -1,0 +1,79 @@
+.containerNavBar {
+
+    .navBarRibbon {
+    background-color: darkBlue;
+    top: 0;
+    width: 100%;
+    }
+    
+    .languageToggle {
+        float: right;
+        margin-top: 32px;
+        margin-right: -286px;
+    }
+    
+    .socialMediaButtons {
+        left: 50%;
+        float: right;
+        margin-top: 15px;
+        margin-right: 160px;
+    }
+    
+    .fa-facebook-square {
+        font-size: 40px;
+        padding: 5px;
+    }
+    
+    .fa-twitter-square {
+        font-size: 40px;
+        padding: 5px;
+    }
+    
+    .fa-instagram {
+        font-size: 40px;
+        padding: 5px;
+    }
+    
+    .middleSection {
+        background-color: #F9F9F9;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+    }
+    
+    .contactInfo {
+        float: right;
+        text-align: center;
+        background-color: #F9F9F9;
+    }
+    
+    .navbar {
+        display: inherit;
+    }
+    
+    .navButtons {
+        text-align: center
+    }
+    
+    button {
+        display: inline-block;
+    }
+    
+    .navbarBoarder {
+        padding-top: 0;
+        background-color: #F9F9F9;
+    }
+    
+    .bottom {
+        border-bottom: 2px solid blue;
+        margin-top: -5px;
+    }
+    
+    .logoAndNo {
+        background-color: #F9F9F9;
+    }
+    
+    .navPills {
+        background-color: #F9F9F9;
+    }
+}

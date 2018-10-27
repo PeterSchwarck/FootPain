@@ -1,0 +1,55 @@
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+!.eslintrc
+php_errorlog
+.log
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!composer.json
+!webpack.*.js
+!package.json
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!README.md
+
+# ignore OS generated files
+ehthumbs.db
+Thumbs.db
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# ignore packaged files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+node_modules/
+public/*
+!dist/index.html
+# ignore the dist directory were our bundle files are going to be
+!.gitkeep
+!.htaccess
