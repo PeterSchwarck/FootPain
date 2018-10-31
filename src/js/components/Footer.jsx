@@ -11,7 +11,7 @@ class Footer extends React.Component{
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
                         <span>
-                            <div>
+                            <div className="aboutUs">
                                 <h5>About Us</h5>
                                 <ul>
                                     <li>Home</li>
@@ -23,7 +23,7 @@ class Footer extends React.Component{
                                     <li>Blog</li>
                                 </ul>    
                             </div>
-                            <div>
+                            <div className="footAnklePain">
                                 <h5>Foot & Ankle Pain</h5>
                                 <ul>
                                     <li>Diabetic Neuropathy</li>

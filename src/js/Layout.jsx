@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
  * - Product: Will render if the url is similar to /product/1,  /product/2,  /product/3... etc.
  */
 import Home from "./views/Home.jsx";
+import FootAnklePain from "./views/FootAnklePain.jsx";
 import Product from "./views/Product.jsx";
 
 /**
@@ -31,6 +32,7 @@ export default class Layout extends Flux.View {
                             <Route exact path="/index.html" component={Home} />
                             <Route exact path="/" component={Home} />
                             <Route exact path="/home" component={Home} />
+                            <Route exact path="/foot-ankle-pain" component={FootAnklePain} />
                             {/* you can also define variables in the url, this url will match for any product*/}
                             <Route exact path="/product/:id" component={Product} />
                             {/* for the last Rout we don't specify any path because we want it to render if no other path have matched */}
