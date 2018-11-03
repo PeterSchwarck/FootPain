@@ -1,44 +1,36 @@
+import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
 import React from 'react';
-import {Link} from 'react-router-dom';
-import GoogleMapReact from 'google-map-react';
 import PropTypes from 'prop-types';
 
-
-import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-
-export class MapContainer extends React.Component {
-  render() {
+class MapConatiner extends React.Component{
+    
+render() {
     return (
-        <Map google={this.props.google} zoom={14}>
-
-            <Marker onClick={this.onMarkerClick}
-                name={'Current location'} />
-
-            <InfoWindow onClose={this.onInfoWindowClose}>
-                <div>
-                    <h1>{this.state.selectedPlace.name}</h1>
-                </div>
-            </InfoWindow>
-        </Map>
+        <div className='mapContainerDiv'>
+            <Map google={this.props.google} zoom={14}>
+     
+                <Marker onClick={this.onMarkerClick}
+                    name={'Current location'} />
+                    
+     
+                <InfoWindow onClose={this.onInfoWindowClose}>
+                </InfoWindow>
+            </Map>
+            
+            
+            
+            
+            
+        </div>
     );
   }
 }
- 
 
 
+export default GoogleApiWrapper({
+  apiKey: ("AIzaSyANJKV-E8CapswTgtm8ayWenBm5S-gjN5o")
+})(MapConatiner);
 
-export default GoogleApiWrapper(
-  (props) => ({
-    apiKey: props.apiKey,
-    language: props.language
-  }
-))(MapContainer);
-
-
-
-
-MapContainer.propTypes = {
-  google: PropTypes.func,
-  center: PropTypes.func,
-  zoom: PropTypes.func
+MapConatiner.propTypes = {
+  google: PropTypes.func
 };
