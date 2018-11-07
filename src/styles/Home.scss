@@ -57,6 +57,7 @@
         margin-right: -15px;
         width: 30%;
         text-align: center;
+        margin-top: 15px;
     }
     
     .weHeretoHelpDiv {
@@ -78,9 +79,8 @@
     .mapDivContent {
         background-color: white;
         color: black;
-        border-bottom: 1px solid black;
-        border-right: 1px solid black;
-        border-left: 1px solid black;
+        float: right;
+        width: 30%;
     }
     
     .conditionsUl {

@@ -3,7 +3,7 @@ import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
-import MapConatiner from '../components/MapContainer.jsx';
+import MapContainer from '../components/MapContainer.jsx';
 
 export default class Home extends Flux.DashView {
     
@@ -99,10 +99,9 @@ export default class Home extends Flux.DashView {
                     <div className="mapDiv">
                         <h4>Location</h4>
                         <div className="mapDivContent">
-                            <MapConatiner />
-                        5642 W. Atlantic Blvd.
-                        Margate, FL 33063
+                            <MapContainer />
                         </div>
+                        
                     </div>
 
                 </div>
