@@ -5,6 +5,7 @@ import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
 import MapContainer from '../components/MapContainer.jsx';
 
+
 export default class Home extends Flux.DashView {
     
     

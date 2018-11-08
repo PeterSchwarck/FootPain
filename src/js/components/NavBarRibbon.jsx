@@ -2,9 +2,23 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import logoUrl from '../../img/logo.png';
 import LanguageDropDown from '../components/LanguageDropDown.jsx';
+import NavDropDown from '../components/NavDropDown.jsx';
 import PropTypes from 'prop-types';
 
 class NavBarRibbon extends React.Component{
+    constructor(){
+        super();
+            this.state = {};
+    }
+    
+    dropDownChange1(param){
+        this.setState({
+            delta: param
+        });
+    this.props.notificationObject.delta=param;
+        
+    }
+    
     
     render(){
         return (
@@ -48,19 +62,9 @@ class NavBarRibbon extends React.Component{
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered navPills">
                         <div className="navbarBoarder">
                             <ul className="nav nav-pills justify-content-center">
-                                <li className="nav-item dropdown">
-                                    <button className="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" onClick={() =>{
-                                 
-                                        
-                                    }}> Foot & Ankle Pain</button>
-                                    <div className="dropdown-menu">
-                                        <a className="dropdown-item" href="#">About Dr. Jay Rhodes</a>
-                                        <a className="dropdown-item" href="#">Before & After</a>
-                                        <a className="dropdown-item" href="#">Testimonials</a>
-                                        <div className="dropdown-divider"></div>
-                                        <a className="dropdown-item" href="#">Separated link</a>
-                                    </div>
-                                </li>
+                                <NavDropDown 
+                                onChange={(e) => this.dropDownChange1(e)} />
+                                
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">About Dr. Jay Rhodes</a>
                                 </li>
@@ -108,3 +112,8 @@ class NavBarRibbon extends React.Component{
 }
 
 export default NavBarRibbon;
+
+NavBarRibbon.propTypes = {
+  notificationObject: PropTypes.object
+ 
+};

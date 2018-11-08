@@ -24,10 +24,7 @@ render() {
                 <InfoWindow onClose={this.onInfoWindowClose}>
                 </InfoWindow>
             </Map>
-            <div>
-            5642 W. Atlantic Blvd.
-            Margate, FL 33063
-            </div>
+            
             
         </div>
     );
