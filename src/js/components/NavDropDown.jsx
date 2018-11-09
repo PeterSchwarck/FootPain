@@ -11,7 +11,6 @@ class NavDropDown extends React.Component{
             showMenu: false
     };
     
-    this.showMenu = this.showMenu.bind(this);
   }
   
   showMenu(e) {
@@ -43,9 +42,11 @@ class NavDropDown extends React.Component{
                     ? (
                 
                         <div className="menu">
-                            <option onClick={() => this.props.onClose()} value="item1">Menu Item 1</option>
-                            <option value="item2">Menu Item 2</option>
-                            <option value="item3">Menu Item 3</option>
+                            <a href="/profile">Profile</a>
+                            <p></p>
+                            <a href="/favorites">Favorites</a>
+                            <p></p>
+                            <a href="/logout">Log Out</a>
                         </div>
                     )
                     : (
@@ -59,7 +60,3 @@ class NavDropDown extends React.Component{
 }    
 
 export default NavDropDown;
-
-NavDropDown.propTypes = {
-  onClose: PropTypes.func
-};

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
 import MapContainer from '../components/MapContainer.jsx';
+import ButtonList from '../components/ButtonList.jsx';
+import Form from '../components/Form.jsx';
 
 
 export default class Home extends Flux.DashView {
@@ -25,30 +27,7 @@ export default class Home extends Flux.DashView {
                         <div className="imageBox">Big image box</div>
                     </span>
                     <span>
-                        <div className="formContainer">
-                            <h4>How can we help you?</h4>
-                            <h5>Request an appointment</h5>
-                            <form>
-                                <div className="form-group">
-                                    <label htmlFor="inputName"></label>
-                                    <input type="text" className="form-control" id="inputName" placeholder="Name"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="inputNumber"></label>
-                                    <input type="text" className="form-control" id="inputNumber" placeholder="Phone Number"></input>
-                                </div>
-                                <div className="form-group">
-                                    <label htmlFor="inputName"></label>
-                                    <input type="email" className="form-control" id="inputEmail" placeholder="Email"></input>
-                                </div>
-                                    
-                                <div className="form-group">
-                                    <label htmlFor="exampleFormControlTextarea1"></label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Questions or Comments"rows="3"></textarea>
-                                </div>
-                                <button type="submit" className="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
+                        <Form />
                     </span>
 
                 </div>
@@ -59,13 +38,7 @@ export default class Home extends Flux.DashView {
                 <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                 </div>
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered logoAndNo">
-                    <div className="buttonRow">
-                        <div className="btn-group btn-group-lg" role="group" aria-label="Basic example">
-                            <button type="button" className="btn btn-secondary">Meet Us</button>
-                            <button type="button" className="btn btn-secondary">Ask the Doctor</button>
-                            <button type="button" className="btn btn-secondary">Request an Appointment</button>
-                        </div>
-                    </div>    
+                    <ButtonList />
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">
                 </div>

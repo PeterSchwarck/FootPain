@@ -17,6 +17,10 @@ import faCaretUp from '@fortawesome/fontawesome-free-solid/faCaretUp';
 import faEdit from '@fortawesome/fontawesome-free-solid/faEdit';
 import faFacebookSquare from '@fortawesome/fontawesome-free-brands/faFacebookSquare';
 import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
+import faHandshake from '@fortawesome/fontawesome-free-regular/faHandshake';
+import faQuestionCircle from '@fortawesome/fontawesome-free-regular/faQuestionCircle';
+import faCalendarCheck from '@fortawesome/fontawesome-free-regular/faCalendarCheck';
+
 
 fontawesome.config = {
   autoReplaceSvg: 'nest'
@@ -25,5 +29,6 @@ fontawesome.config = {
 fontawesome.library.add(
     faCheck, faGraduationCap, faPlay, faSpinner, faSearch, faGithub,
     faCog, faUsers, faEllipsisV, faSignOutAlt, faTachometerAlt, 
-    faPlusCircle, faTrashAlt, faEdit, faCaretUp, faCaretDown, faFacebookSquare, faInstagram
+    faPlusCircle, faTrashAlt, faEdit, faCaretUp, faCaretDown, faFacebookSquare, faInstagram,
+    faHandshake, faQuestionCircle, faCalendarCheck
 );

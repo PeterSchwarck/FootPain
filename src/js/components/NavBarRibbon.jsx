@@ -8,23 +8,16 @@ import PropTypes from 'prop-types';
 class NavBarRibbon extends React.Component{
     constructor(){
         super();
-            this.state = {};
+             this.state = {};
     }
     
-    dropDownChange1(param){
-        this.setState({
-            delta: param
-        });
-    this.props.notificationObject.delta=param;
-        
-    }
     
     
     render(){
         return (
             <div className="containerNavBar">
                 <div className="navBarRibbon">
-                    <div className="row">
+                    <div className="row logoRow">
                         <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                         </div>
                         <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
@@ -61,7 +54,7 @@ class NavBarRibbon extends React.Component{
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered navPills">
                         <div className="navbarBoarder">
-                            <ul className="nav nav-pills justify-content-center">
+                            <ul className="nav nav-pills justify-content-center navConatiner">
                                 <NavDropDown 
                                 onChange={(e) => this.dropDownChange1(e)} />
                                 
@@ -82,20 +75,6 @@ class NavBarRibbon extends React.Component{
                                 </li>
                             </ul>
                         
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                           
                         </div>
                     </div>    
                     <div className="col-12 col-lg-8 col-md-10 mx-auto">

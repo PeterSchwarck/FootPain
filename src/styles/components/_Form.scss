@@ -1,0 +1,32 @@
+.formContainer {
+        float: right;
+        background-color: darkBlue;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        margin-right: -15px;
+        width: 30%;
+        
+    h4, h5 {
+        text-align: center;
+    }
+    
+    .rowOne {
+        padding-top: 15px;
+    }
+    
+    .buttonRow{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: -10px;
+    }
+    
+    .btn-primary {
+        margin-top: 20px;
+    }
+}

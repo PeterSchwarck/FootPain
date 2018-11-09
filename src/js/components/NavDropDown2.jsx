@@ -1,54 +1,48 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 export class NavDropDown2 extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-            showMenu: false
-    };
-  
-      this.setState({
-          showMenu: true
-      });
+    this.state = {};
+
+    
+    
   }
   
   componentDidMount(){
     this.props.onChange(this.state.value);
   }
-  
-  render(){
-        return (
-            <div className="NavDropDownDiv">
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        <span className='label1'>
-                          Foot & Ankle Pain
-                        </span>
-                        <select className= 'delta'
-                          value={this.state.value} 
-                          onChange={(e)=>{
-                            this.props.onChange(e.target.value);
-                            this.setState({
-                              value: e.target.value
-                            });
-                          }}>
-                            <option value='Foot_and_Ankle_Pain'>Foot and Ankle Pain%</option>
-                            <option value='Foot_and_Ankle_Pain'>Foot and Ankle Pain%</option>
-                            <option value='Foot_and_Ankle_Pain'>Foot and Ankle Pain%</option>
-                        </select>
-                    </label>
-                    
-                </form>
-            </div>
-        );
-    }   
 
-}    
 
-export default NavDropDown2;
+  render() {
+    return (
+        <div className='dropDown2'>
+            <form onSubmit={this.handleSubmit}>
+                <label>
+                  Settings:
+                    <select className= 'settings'
+                    value={this.state.value} 
+                    onChange={(e)=>{
+                      this.props.onChange(e.target.value);
+                      this.setState({
+                        value: e.target.value
+                        
+                      });
+                    }}>
+                        <option className="dropdown-item" value="price_delta">Price</option>
+                        <option value="volume_delta">Volume</option>
+          
+                    </select>
+                </label>
+        
+            </form>
+        </div>
+    );
+  }
+}
 
 NavDropDown2.propTypes = {
-  onClose: PropTypes.func,
   onChange: PropTypes.func
 };
