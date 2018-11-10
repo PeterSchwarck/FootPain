@@ -17,7 +17,7 @@ class NavDropDown extends React.Component{
       e.preventDefault();
       
       this.setState({
-          showMenu: true
+          showMenu: !this.state.showMenu
       });
   }
   
@@ -31,22 +31,24 @@ class NavDropDown extends React.Component{
     render(){
         return (
             <div className="NavDropDownDiv">
-                <button onClick={(e) => this.showMenu(e)
+                <div className="dropDownButton" onClick={(e) => this.showMenu(e)
                     
                 }>
                 Foot & Ankle Pain
-                </button>
+                </div>
                 
                 {
                     this.state.showMenu
                     ? (
                 
-                        <div className="menu">
-                            <a href="/profile">Profile</a>
-                            <p></p>
-                            <a href="/favorites">Favorites</a>
-                            <p></p>
-                            <a href="/logout">Log Out</a>
+                        <div className="dropdownContent">
+                            <a href="#" className="link">You</a>
+                            <br></br>
+                            <a href="#" className="link">Look</a>
+                            <br></br>
+                            <a href="#" className="link">Awesome</a>
+                            <br></br>
+                            <a href="#" className="link">Today !</a>
                         </div>
                     )
                     : (
