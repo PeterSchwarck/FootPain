@@ -8,44 +8,81 @@ class Footer extends React.Component{
             <footer className="containerFooter">
                 <div className="container-fluid text-center text-md-left">
                     <div className="row">
-                        <div className="col-md-6 mt-md-0 mt-3">
-                            <h5 className="text-uppercase">Footer Content</h5>
-                            <p>Here you can use rows and columns here to organize your footer content.</p>
-                        </div>
-                        <hr className="clearfix w-100 d-md-none pb-3"></hr>
-                        <div className="col-md-3 mb-md-0 mb-3">
-                            <h5 className="text-uppercase">Links</h5>
-                            <ul className="list-unstyled">
+                        <div className="col-md-6 mb-md-0 mb-3 firstColumn">
+                            <h5 className="text-uppercase">About Us</h5>
+                            <ul className="list-unstyle nav-stacked">
                                 <li>
-                                    <a href="#!">Link 1</a>
+                                    <a href="#!">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 2</a>
+                                    <a href="#!">About Dr. Jay Rhodes</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 3</a>
+                                    <a href="#!">Testimonials</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 4</a>
+                                    <a href="#!">New Patients</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="col-md-3 mb-md-0 mb-3">
-                            <h5 className="text-uppercase">Links</h5>
-                            <ul className="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
-                                </li>
-                            </ul>
+                        <div className="col-md-6 mb-md-0 mb-3 secondColumn">
+                            <h5 className="text-uppercase">Foot & Ankle Pain</h5>
+                            <div className="columnDiv">
+                                <ul className="list-unstyle nav-stackedd">
+                                    <li>
+                                        <a href="#!">Diabetic Neuropathy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Diabetic Foot Care</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Diabetic Infections</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Medicare’s Diabetic Shoe Program</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Athletes Foot</a>
+                                    </li>
+                                </ul>
+                                <ul className="list-unstyle nav-stacked">
+                                    <li>
+                                        <a href="#!">Bunions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Burning / Tingling</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Custom Orthotics</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Fractures</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Gout</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Fungal Toenails</a>
+                                    </li>
+                                </ul>
+                                <ul className="list-unstyle nav-stacked">
+                                    <li>
+                                        <a href="#!">Hammer Toes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Heel & Bone Spurs</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Ingrown Toenails</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Neuromas / Forefoot Pain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#!">Warts</a>
+                                    </li>
+                                </ul>
+                            </div>    
                         </div>
                     </div>
                 </div>
@@ -53,6 +90,11 @@ class Footer extends React.Component{
                 </div>
             </footer>
                         
+
+
+
+
+
                         
 
                         

@@ -1,13 +1,14 @@
 .formContainer {
-        float: right;
-        background-color: darkBlue;
-        padding-left: 20px;
-        padding-right: 20px;
-        color: white;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        margin-right: -15px;
-        width: 30%;
+    background-color: darkBlue;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 500px;
+    float: right;
+
         
     h4, h5 {
         text-align: center;

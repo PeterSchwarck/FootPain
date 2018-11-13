@@ -3,5 +3,31 @@
     background-color: #0B4479;
     color: white;
     
+    .firstColumn {
+        padding: 10px;
+        padding-left: 8%;
+    }
+    
+    .secondColumn {
+         padding: 10px;
+         padding-right: 8%;
+    }
+    
+    .columnDiv {
+        column-count: 3;
+    }
+    
+    .secondUl {
+        padding-top: 75px;
+    }
+    
+    h5 {
+        border-bottom: 1px white solid;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
     
 }

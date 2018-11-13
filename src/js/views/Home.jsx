@@ -6,6 +6,7 @@ import Footer from '../components/Footer.jsx';
 import MapContainer from '../components/MapContainer.jsx';
 import ButtonList from '../components/ButtonList.jsx';
 import Form from '../components/Form.jsx';
+import Carousel from '../components/Carousel.jsx';
 
 
 export default class Home extends Flux.DashView {
@@ -21,28 +22,22 @@ export default class Home extends Flux.DashView {
             
             <div className="row rowOne">
                 <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
+                
+                
+                
+                
+                
+                
+                
                 </div>
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
-                    <span>
-                        <div className="imageBox">Big image box</div>
-                    </span>
-                    <span>
-                        <Form />
-                    </span>
-
+                    <Carousel />
+                    <Form />
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">
                 </div>
             </div>
-            <div className="row">
-                <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
-                </div>
-                <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered logoAndNo">
-                    <ButtonList />
-                </div>
-                <div className="col-12 col-lg-8 col-md-10 mx-auto">
-                </div>
-            </div>
+            <ButtonList />
             <div className="row conditionsMapRow">
                 <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                 </div>
