@@ -10,7 +10,7 @@ class Footer extends React.Component{
                     <div className="row">
                         <div className="col-md-6 mb-md-0 mb-3 firstColumn">
                             <h5 className="text-uppercase">About Us</h5>
-                            <ul className="list-unstyle nav-stacked">
+                            <ul className="list-unstyle nav-stacked lists">
                                 <li>
                                     <a href="#!">Home</a>
                                 </li>
@@ -28,7 +28,7 @@ class Footer extends React.Component{
                         <div className="col-md-6 mb-md-0 mb-3 secondColumn">
                             <h5 className="text-uppercase">Foot & Ankle Pain</h5>
                             <div className="columnDiv">
-                                <ul className="list-unstyle nav-stackedd">
+                                <ul className="list-unstyle nav-stacked lists">
                                     <li>
                                         <a href="#!">Diabetic Neuropathy</a>
                                     </li>

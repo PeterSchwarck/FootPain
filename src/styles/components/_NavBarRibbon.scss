@@ -1,10 +1,24 @@
 .containerNavBar {
     background-color: #F9F9F9;
 
+    .navbar-inverse {
+        padding-bottom: 0;
+    }
+    
+    .nav-item {
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    .nav-item a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
     .navBarRibbon {
-    background-color: darkBlue;
-    top: 0;
-    width: 100%;
+        background-color: #0B4479;
+        top: 0;
+        width: 100%;
     }
     
     .languageToggle {
@@ -67,6 +81,8 @@
     
     .bottom {
         margin-top: -5px;
+        border-bottom: 2px solid #0B4479;
+        margin-bottom: 5px;
     }
     
     .logoAndNo {

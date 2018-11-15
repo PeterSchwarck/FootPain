@@ -38,7 +38,8 @@ class NavBarRibbon extends React.Component{
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered logoAndNo">
                         <div className="middleSection">
-                            <img className="logoImg" src={logoUrl}></img>
+                            <img className="logoImg" src={logoUrl}>
+                            </img>
                             <div className="contactInfo">
                                 <h3>Same Day Appointments Avaialable</h3>
                                 <h1>954-974-3535</h1>
@@ -53,13 +54,14 @@ class NavBarRibbon extends React.Component{
                     <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered navPills">
-                        <div className="navbarBoarder">
+                        <nav className="navbar navbar-inverse">
+                        
                             <ul className="nav nav-pills justify-content-center navConatiner">
                                 <NavDropDown 
                                 onChange={(e) => this.dropDownChange1(e)} />
                                 
                                 <li className="nav-item">
-                                    <a className="nav-link" href="#">About Dr. Jay Rhodes</a>
+                                    <Link to='about-us'className="nav-link" href="#">About Dr. Jay Rhodes</Link>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="#">Before & After</a>
@@ -75,7 +77,7 @@ class NavBarRibbon extends React.Component{
                                 </li>
                             </ul>
                         
-                        </div>
+                        </nav>
                     </div>    
                     <div className="col-12 col-lg-8 col-md-10 mx-auto">
                     </div>
