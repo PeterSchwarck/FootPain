@@ -5,6 +5,8 @@ import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
 import MapContainer from '../components/MapContainer.jsx';
 import Form from '../components/Form.jsx';
+import jayrhodesUrl from '../../img/jayrhodes.png';
+import ButtonList from '../components/ButtonList.jsx';
 
 
 export default class AboutUs extends Flux.DashView {
@@ -23,11 +25,13 @@ export default class AboutUs extends Flux.DashView {
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
                     <div className="aboutJay">
                         <h4>About Dr. Jay Rhodes</h4>
-                        <div>
+                        <div className="headerDiv">
                         Foot Pain Doctor and Diabetic Infections 
                         </div>
-                        <div>
-                            <ul>
+                        <div className="imgUlDiv">
+                            <img className="jayrhodesImg" src={jayrhodesUrl}>
+                            </img>
+                            <ul className="ulList">
                                 <li>Dr. Rhodes is a graduate of Long Island University and Ohio College of Podiatric Medicine</li>
                                 <li>He also attended Cornell University Ithaca, NY</li>
                                 <li>He spent a year Preceptorship in Atlanta, GA</li>
@@ -45,12 +49,16 @@ export default class AboutUs extends Flux.DashView {
             <div className="row">
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">
                 </div>
-                <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
                 
+                <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
+                    <ButtonList />
+                    <MapContainer />    
+                    Is this thing on?
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">
                 </div>
             </div>
+            <Footer />
         
         </div>
       

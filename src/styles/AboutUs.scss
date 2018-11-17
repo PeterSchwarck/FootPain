@@ -3,10 +3,42 @@
     h4 {
         background-color: #0B4479;
         color: white;
+        padding-bottom: 5px;
+        padding-left: 5px;
+        margin-bottom: 0;
     }
 
     .aboutJay {
         float: left;
-        
+    }
+    
+    .row {
+        margin-right: 0;
+    }
+    
+    .headerDiv {
+        font-size: 1.5rem;
+        color: #0B4479;
+        padding-bottom: 10px;
+    }
+    
+    .ulList {
+        float: left;
+        width: 475px;
+        margin-left: 14px;
+    }
+    
+    .jayrhodesImg {
+        display: inline-block;
+        float: left;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    .jayCaption {
+        display: block;
+        color: #1A60A0;
+        padding: 6px 0 0 25px;
     }
 }

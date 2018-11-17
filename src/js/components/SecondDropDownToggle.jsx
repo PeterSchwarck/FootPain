@@ -8,35 +8,37 @@ class SecondDropDownToggle extends React.Component{
             this.state = {};
     }
     
+    render() {
+        if(!this.props.show) return null;
+        
+        return (
+            <div className="SecondDropDownDiv" onMouseLeave={() => this.props.onMouseLeave()}>
+                <ul className="nav nav-pills justify-content-center navConatiner">
+                    <li className="nav-item">
+                        <Link to='home'className="nav-link" href="#">Diabetic Neuropathy</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='home'className="nav-link" href="#">Diabetic Foot Care</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='home'className="nav-link" href="#">Diabetic Infectionsy</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link to='home'className="nav-link" href="#">Medicare’s Diabetic Shoe Programy</Link>
+                    </li>
+                </ul>    
     
-    
-    
-render() {
-    
-    return (
-        <div className="SecondDropDownDiv">
-            <ul className="nav nav-pills justify-content-center navConatiner">
-                <li className="nav-item">
-                    <Link to='home'className="nav-link" href="#">Diabetic Neuropathy</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='home'className="nav-link" href="#">Diabetic Foot Care</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='home'className="nav-link" href="#">Diabetic Infectionsy</Link>
-                </li>
-                <li className="nav-item">
-                    <Link to='home'className="nav-link" href="#">Medicare’s Diabetic Shoe Programy</Link>
-                </li>
-            </ul>    
-
-        </div> 
-    );
-  }
+            </div> 
+        );
+      }
 }
 
 export default SecondDropDownToggle;
 
+SecondDropDownToggle.propTypes = {
+  show: PropTypes.object,
+  onMouseLeave: PropTypes.func
+};
 
 
 

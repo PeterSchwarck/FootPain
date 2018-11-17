@@ -58,7 +58,7 @@ render() {
 };
     
     return (
-        <div classNameName="carouselContainer">
+        <div className="carouselContainer">
             <ImageSlide url={ imgUrls[this.state.currentImageIndex] } />
         
         </div>

@@ -3,6 +3,7 @@ import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
+import Carousel2 from '../components/Carousel2.jsx';
 
 export default class Home extends Flux.DashView {
     
@@ -18,6 +19,7 @@ export default class Home extends Flux.DashView {
             <div className="row rowOne">
                 <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                 </div>
+                <Carousel2 />
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
 
                 </div>

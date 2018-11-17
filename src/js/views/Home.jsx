@@ -65,13 +65,8 @@ export default class Home extends Flux.DashView {
                             <li>Custom Orthotics</li>
                         </ul>
                     </div>
-                    <div className="mapDiv">
-                        <h4>Location</h4>
-                        <div className="mapDivContent">
-                            <MapContainer />
-                        </div>
+                    <MapContainer />
                         
-                    </div>
 
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">

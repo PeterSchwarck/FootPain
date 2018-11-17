@@ -9,21 +9,29 @@ render() {
     
     return (
         <div className='mapContainerDiv'>
-            <Map className="innerMapDiv" 
-                google={this.props.google} 
-                initialCenter={{
-                    lat: 40.854885,
-                    lng: -88.081807
-                }}
-                zoom={14}>
-     
-                <Marker onClick={this.onMarkerClick}
-                    name={'Current location'} />
-                    
-     
-                <InfoWindow onClose={this.onInfoWindowClose}>
-                </InfoWindow>
-            </Map>
+            <h4>Location</h4>
+            <div className="mapDivContent">
+            
+            
+            
+            
+                <Map className="innerMapDiv" 
+                    google={this.props.google} 
+                    initialCenter={{
+                        lat: 40.854885,
+                        lng: -88.081807
+                    }}
+                    zoom={14}>
+         
+                    <Marker onClick={this.onMarkerClick}
+                        name={'Current location'} />
+                        
+         
+                    <InfoWindow onClose={this.onInfoWindowClose}>
+                        <div>Hello</div>
+                    </InfoWindow>
+                </Map>
+            </div>
             
             
         </div>
@@ -37,5 +45,5 @@ export default GoogleApiWrapper({
 })(MapContainer);
 
 MapContainer.propTypes = {
-  google: PropTypes.func
+  google: PropTypes.object
 };

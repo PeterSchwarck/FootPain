@@ -64,10 +64,11 @@ class NavDropDown extends React.Component{
                         <div className="dropdownContent">
                             <a href="#" className="link" onClick={() => this.showSecondMenu()}>Diabetes</a>
                             <br></br>
-                            {
-                                <SecondDropDownToggle show={this.state.showSecondMenu} onClose={()=>this.showSecondMenu()}  />
-                            }
-                            
+                            <SecondDropDownToggle 
+                                show={this.state.showSecondMenu} 
+                                onMouseLeave={()=>this.setState({showSecondMenu: false})
+                                }
+                            />
                             <a href="#" className="link">Athletes Foot</a>
                             <br></br>
                             <a href="#" className="link">Bunions</a>
