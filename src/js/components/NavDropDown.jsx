@@ -10,15 +10,10 @@ class NavDropDown extends React.Component{
     
         this.state = {
             showMenu: false,
-            showSecondMenu: false,
-            black : true
+            showSecondMenu: false
     };
     
   }
-  
-    changeColor(){
-        this.setState({black: !this.state.black});
-    }
   
     showMenu(e) {
       e.preventDefault();
@@ -42,7 +37,6 @@ class NavDropDown extends React.Component{
   
   
     render(){
-        let btn_class = this.state.black ? "blackButton" : "whiteButton";
         
         return ( 
             <div className="NavDropDownDiv">

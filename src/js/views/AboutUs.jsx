@@ -8,7 +8,6 @@ import Form from '../components/Form.jsx';
 import jayrhodesUrl from '../../img/jayrhodes.png';
 import ButtonList from '../components/ButtonList.jsx';
 
-
 export default class AboutUs extends Flux.DashView {
     
     render() {

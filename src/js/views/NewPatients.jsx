@@ -3,9 +3,9 @@ import Flux from "@4geeksacademy/react-flux-dash";
 import { Link } from "react-router-dom";
 import NavBarRibbon from '../components/NavBarRibbon.jsx';
 import Footer from '../components/Footer.jsx';
+import Form from '../components/Form.jsx';
 
-
-export default class Home extends Flux.DashView {
+export default class NewPatients extends Flux.DashView {
     
     
   render() {
@@ -20,7 +20,7 @@ export default class Home extends Flux.DashView {
                 <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                 </div>
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
-                    
+                    <Form />
 
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">

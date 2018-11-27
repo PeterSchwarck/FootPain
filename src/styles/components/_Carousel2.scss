@@ -1,0 +1,53 @@
+.carouselContainer2 {
+    float: left;
+    width: 100%;
+    max-width: 789px;
+    height: 402px;
+    border: 2px solid black;
+    margin: 5px;
+    
+    
+    .pic {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+    }
+      
+    img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .current {
+        left: 100px;
+    }
+    
+    .current.move {
+        left: 100px;
+        transition: all 1s ease;
+    }
+    
+    .next {
+          left: 500px;
+    }
+    
+    .next.move {
+        left: 100px;
+        transition: all .5s ease;
+    }
+    
+    .pic-wrapper {
+        background: lightgray;
+        left: -100px;
+        position: absolute;
+    }
+    
+    .mask {
+        left: 50px;
+        overflow: hidden;
+        width: 200px;
+        height: 220px;
+        position: absolute;
+    }
+}

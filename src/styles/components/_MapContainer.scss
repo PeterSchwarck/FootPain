@@ -1,4 +1,12 @@
 .mapContainerDiv {
+    float: right;
+    background-color: #0B4479;
+    color: white;
+    margin-right: -15px;
+    width: 30%;
+    text-align: center;
+    margin-top: 15px;
+    
     
     .innerMapDiv {
         width: 29% !important;
@@ -12,14 +20,6 @@
         text-align: center;
     }
     
-    h4 {
-        float: right;
-        background-color: #0B4479;
-        color: white;
-        margin-right: -15px;
-        width: 30%;
-        text-align: center;
-    }
     
     .mapDivContent {
         background-color: white;
@@ -27,4 +27,5 @@
         float: right;
         width: 30%;
     }
+    
 }

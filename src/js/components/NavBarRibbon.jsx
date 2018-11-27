@@ -8,7 +8,19 @@ import PropTypes from 'prop-types';
 class NavBarRibbon extends React.Component{
     constructor(){
         super();
-             this.state = {};
+             this.state = {
+                 clickFunction() {
+                     return {
+                         condition: false
+                     };
+                 }
+             };
+    }
+    
+    handleClick(){
+        this.setState({
+            condition: !this.state.condition
+        });
     }
     
     
@@ -38,8 +50,10 @@ class NavBarRibbon extends React.Component{
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered logoAndNo">
                         <div className="middleSection">
-                            <img className="logoImg" src={logoUrl}>
-                            </img>
+                            <Link to="/home">
+                                <img className="logoImg" src={logoUrl}>
+                                </img>
+                            </Link>    
                             <div className="contactInfo">
                                 <h3>Same Day Appointments Avaialable</h3>
                                 <h1>954-974-3535</h1>
@@ -54,28 +68,35 @@ class NavBarRibbon extends React.Component{
                     <div className="col-12 col-lg-8 col-md-10 mx-auto topRow">
                     </div>
                     <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered navPills">
-                        <nav className="navbar navbar-inverse">
-                        
-                            <ul className="nav nav-pills justify-content-center navConatiner">
-                                <NavDropDown 
-                                onChange={(e) => this.dropDownChange1(e)} />
+                        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span className="navbar-toggler-icon"></span>
+                            </button>
+                            <div className="collapse navbar-collapse" id="navbarText">
+                                <ul className="navbar-nav mr-auto navConatiner">
+                                    <li className="nav-item">
+                                        <Link to='home' className="nav-link" href="#">Home</Link>
+                                    </li>
+                                    <NavDropDown 
+                                    onChange={(e) => this.dropDownChange1(e)} />
+                                    <li className="nav-item">
+                                        <Link to='about-us' className="nav-link" href="#">About Dr. Jay Rhodes</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to='before-and-after' className="nav-link" href="#">Before & After</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to='testimonials' className="nav-link" href="#">Testimonials</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to='new-patients'className="nav-link" href="#">New Patients</Link>
+                                    </li>
+                                </ul>
                                 
-                                <li className="nav-item">
-                                    <Link to='about-us'className="nav-link" href="#">About Dr. Jay Rhodes</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Before & After</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Testimonials</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Videos</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">New Patients</a>
-                                </li>
-                            </ul>
+                                
+                                
+                                
+                            </div>
                         
                         </nav>
                     </div>    

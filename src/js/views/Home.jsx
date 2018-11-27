@@ -6,7 +6,8 @@ import Footer from '../components/Footer.jsx';
 import MapContainer from '../components/MapContainer.jsx';
 import ButtonList from '../components/ButtonList.jsx';
 import Form from '../components/Form.jsx';
-import Carousel from '../components/Carousel.jsx';
+import Carousel2 from '../components/Carousel2.jsx';
+import TestimonialsCarousel from '../components/TestimonialsCarousel.jsx';
 
 
 export default class Home extends Flux.DashView {
@@ -31,7 +32,7 @@ export default class Home extends Flux.DashView {
                 
                 </div>
                 <div className="col-12 col-lg-10 col-md-10 mx-auto col-centered">
-                    <Carousel />
+                    <Carousel2 />
                     <Form />
                 </div>
                 <div className="col-12 col-lg-8 col-md-10 mx-auto">
@@ -80,12 +81,8 @@ export default class Home extends Flux.DashView {
                         <h3>We’re Here to Help</h3>
                         Dr. Rhodes and his staff offers a high quality patient care experience. Please read the testimonials.
                     </div>
-                    <div className="testimonialDiv">
-                        <h4>Testimonials</h4>
-                        <div className="testimonialContent">
-                        Content Content Content Conten
-                        </div>
-                    </div>
+                    <TestimonialsCarousel />
+                    
                     
 
                 </div>
